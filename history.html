@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Illusion — The Architecture of Illusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ARCHITECTURE OF ILLUSION</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link active">History</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="threats.html" class="nav-link">Threats</a></li>
+                <li><a href="myths.html" class="nav-link">Myths</a></li>
+                <li><a href="prevention.html" class="nav-link">Prevention</a></li>
+                <li><a href="references.html" class="nav-link">Refs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- History Page -->
+    <section class="page-section" id="page-history">
+        <div class="hero-section">
+            <div class="hero-image">
+                <video class="hero-video" src="Video/introduction.mp4" autoplay muted loop playsinline preload="auto"></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">History of Illusion</h1>
+                <div class="hero-button">
+                    <span>The Evolution of Digital Forgery</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-intro">
+            <div class="eyebrow">From Pixel-By-Pixel Craft to One-Click Synthesis</div>
+            <h2>Faking images and audio is not new. The big change is who can do it, and how fast.</h2>
+            <p>For most of the last hundred years, faking a photo or a voice took skilled labour and time. In the last decade, a series of research breakthroughs and one anonymous Reddit account collapsed that work into a few clicks.<sup class="fn"><a href="references.html#ref-10">10</a></sup><sup class="fn"><a href="references.html#ref-11">11</a></sup></p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-item timeline-left">
+                <div class="timeline-year-large timeline-bg-left">90</div>
+                <div class="timeline-year">Early 2000s — The CGI Era</div>
+                <div class="timeline-content-wrapper">
+                    <div class="timeline-content">
+                        <p><strong>The CGI Era.</strong> Realistic synthetic media meant a studio. It needed CGI artists, large budgets, and months of frame-by-frame rendering. The barrier to entry was money and skill. So forgery at any quality stayed inside film and television.<sup class="fn"><a href="references.html#ref-11">11</a></sup></p>
+                    </div>
+                    <figure class="timeline-image timeline-image-left">
+                        <img src="image/Hollywoodvfx.jpg" alt="Hollywood VFX studio — months, teams, and budgets behind classic CGI production" loading="lazy">
+                        <figcaption class="timeline-caption">Jurassic Park (1993) — ground-breaking CGI Hollywood movie</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-year-large timeline-bg-right">14</div>
+                <div class="timeline-year">2014 — The Technical Turning Point</div>
+                <div class="timeline-content-wrapper">
+                    <figure class="timeline-image timeline-image-right">
+                        <img src="image/Gan.webp" alt="Generative Adversarial Network — Ian Goodfellow's generator vs. discriminator minimax game" loading="lazy">
+                        <figcaption class="timeline-caption">Ian Goodfellow</figcaption>
+                    </figure>
+                    <div class="timeline-content">
+                        <p><strong>Ian Goodfellow</strong> and his co-authors introduced the <strong>Generative Adversarial Network (GAN)</strong> at NeurIPS.<sup class="fn"><a href="references.html#ref-12">12</a></sup> The idea was to train two neural networks against each other so that one of them learned to produce data that looked like the real thing. This shifted the burden of "drawing" away from human artists and onto a model that taught itself. The original 2014 paper produced low-resolution images, but the architecture was the seed for almost everything that followed in face synthesis.<sup class="fn"><a href="references.html#ref-10">10</a></sup></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-year-large timeline-bg-left">17</div>
+                <div class="timeline-year">Late 2017 — The Reddit Watershed</div>
+                <div class="timeline-content-wrapper">
+                    <div class="timeline-content">
+                        <p>A user on Reddit using the handle <em>"deepfakes"</em> posted face-swap videos that grafted celebrity faces onto adult-film performers. The user also <strong>released the code</strong>. That second part is what mattered. From that point on, anyone with a consumer GPU could try the same thing.<sup class="fn"><a href="references.html#ref-11">11</a></sup></p>
+                    </div>
+                    <div class="timeline-image timeline-image-left">
+                        <img src="image/Deepfake.jpg" alt="The 2017 Reddit user 'deepfakes' released open-source face-swap code, democratizing the technology overnight" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-year-large timeline-bg-right">18</div>
+                <div class="timeline-year">2018 — 2022 — Democratization</div>
+                <div class="timeline-content-wrapper">
+                    <figure class="timeline-image timeline-image-right">
+                        <img src="image/stylegan-face.jpg" alt="A photorealistic portrait generated by StyleGAN — the person in this image does not exist. (Image: Wikimedia Commons, public domain, generated by StyleGAN, 2019)" loading="lazy">
+                        <figcaption class="timeline-caption">This person does not exist — image generated by StyleGAN (Karras et al., NVIDIA, 2019).</figcaption>
+                    </figure>
+                    <div class="timeline-content">
+                        <p>After the code was public, the tools got friendlier. Open-source projects let people with no machine learning background train their own face-swap models. Better generators like <strong>StyleGAN</strong>, published by Karras and colleagues at CVPR in 2019, pushed face quality to near-photographic levels.<sup class="fn"><a href="references.html#ref-13">13</a></sup><sup class="fn"><a href="references.html#ref-14">14</a></sup> By 2020, peer-reviewed surveys were already describing deepfakes as a security and policy problem, not just a research toy.<sup class="fn"><a href="references.html#ref-10">10</a></sup></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-year-large timeline-bg-left">23</div>
+                <div class="timeline-year">2023 — Zero-Shot Voice Cloning</div>
+                <div class="timeline-content-wrapper">
+                    <div class="timeline-content">
+                        <p>Voice cloning crossed an important threshold. Earlier systems needed hours of clean studio audio. Newer models, including Microsoft's <strong>VALL-E</strong>, can clone a voice from about <strong>three seconds</strong> of audio.<sup class="fn"><a href="references.html#ref-4">4</a></sup> The training trick is to learn the speaker's "fingerprint" separately from the words being said, so the model can put any new sentence into that voice.<sup class="fn"><a href="references.html#ref-15">15</a></sup></p>
+                    </div>
+                    <div class="timeline-image timeline-image-left">
+                        <img src="image/zeroshot-voice-cloning.jpg" alt="Zero-shot voice cloning — three seconds of audio is enough to mimic a person's voice" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-right">
+                <div class="timeline-year-large timeline-bg-right">25</div>
+                <div class="timeline-year">2025 — Explosion</div>
+                <div class="timeline-content-wrapper">
+                    <div class="timeline-image timeline-image-right">
+                        <img src="image/2025-explosion.jpeg" alt="2025 explosion — synthetic media files surged from 500K to 8M" loading="lazy">
+                    </div>
+                    <div class="timeline-content">
+                        <p>Threat reports tracked a sharp jump in synthetic media volume, from roughly <strong>500,000 files in 2023 to about 8 million by 2025</strong>.<sup class="fn"><a href="references.html#ref-9">9</a></sup> At the same time, federal regulators in the United States and several other governments started writing rules for non-consensual intimate imagery and AI fraud.<sup class="fn"><a href="references.html#ref-2">2</a></sup><sup class="fn"><a href="references.html#ref-16">16</a></sup></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-left">
+                <div class="timeline-year-large timeline-bg-left">26</div>
+                <div class="timeline-year">2026 — The Event Horizon</div>
+                <div class="timeline-content-wrapper">
+                    <div class="timeline-content">
+                        <p>The friction needed to launch a serious attack is now close to <strong>zero</strong>. The same family of models that brought a young Luke Skywalker back to <em>The Mandalorian</em><sup class="fn"><a href="references.html#ref-7">7</a></sup> also let a small group of attackers stage a $25 million deepfake video conference inside Arup.<sup class="fn"><a href="references.html#ref-3">3</a></sup> The rest of this report walks through how that happened, where it helps, and what to do about it.</p>
+                    </div>
+                    <div class="timeline-image timeline-image-left">
+                        <img src="image/2026-event-horizon.png" alt="The Event Horizon — friction approaches zero as deepfake creation becomes a one-click commodity for any target" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-line"></div>
+                <p>© 2026, The Architecture of Illusion</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Chapters</h4>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Further</h4>
+                    <ul>
+                        <li><a href="myths.html">Myths Debunked</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">g</a>
+                <a href="#" class="social-icon">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

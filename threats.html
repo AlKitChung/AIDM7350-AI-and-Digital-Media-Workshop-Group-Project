@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threats — The Architecture of Illusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ARCHITECTURE OF ILLUSION</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="threats.html" class="nav-link active">Threats</a></li>
+                <li><a href="myths.html" class="nav-link">Myths</a></li>
+                <li><a href="prevention.html" class="nav-link">Prevention</a></li>
+                <li><a href="references.html" class="nav-link">Refs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Threats Page -->
+    <section class="page-section" id="page-3">
+        <div class="hero-section">
+            <div class="hero-image">
+                <video class="hero-video" src="Video/Shadow.mp4" autoplay muted loop playsinline preload="auto"></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Threats</h1>
+                <div class="hero-button">
+                    <span>The Dark Economy — Fraud &amp; Exploitation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="shadows-section">
+            <div class="eyebrow">The Dark Economy</div>
+            <div class="shadows-intro">
+                <h2>Where researchers see new tools, attackers see new attack surface.</h2>
+                <p>The hard part about defending against synthetic media is that it skips most of the traditional security stack. It does not need to break a firewall, guess a password, or push malware onto a device. It just needs to convince a person.<sup class="fn"><a href="references.html#ref-22">22</a></sup> The two cases below show the range, from a corporate boardroom to a parent's phone.</p>
+            </div>
+
+            <!-- ARUP HEIST -->
+            <div class="case-study arup">
+                <div class="case-study-header">
+                    <div class="case-icon"><img src="UI/shape4.png" alt="" aria-hidden="true"></div>
+                    <div class="case-title">
+                        <span class="case-tag">Example 1 — Corporate Fraud</span>
+                        <h3>The $25 Million Illusion</h3>
+                        <p class="case-sub">Arup · Hong Kong finance department · January 2024</p>
+                    </div>
+                    <div class="case-loss">
+                        <div class="loss-num">$25.6M</div>
+                        <div class="loss-lbl">Wired across 5 accounts</div>
+                    </div>
+                </div>
+                <div class="case-body">
+                    <p>In January 2024, the global engineering firm <strong>Arup</strong> lost about $25.6 million in a single attack. There was no malware and no breached server. The whole attack ran on social engineering and a deepfake video call.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                    <p>It started with an email. An employee in Arup's Hong Kong finance office got a message that looked like it came from the company's Chief Financial Officer, asking for a set of urgent confidential wire transfers. The employee was suspicious and slowed down. So far, the standard training was working.</p>
+                    <p>To clear the doubt, the attackers set up a video meeting. When the employee joined, several familiar faces were on screen, including the CFO and other senior colleagues. They spoke with normal cadence, joked, and signed off on the transfers.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                    <p>The employee then made <strong>fifteen wire transfers across five accounts</strong>, totalling roughly 200 million Hong Kong dollars (about <strong>$25.6 million USD</strong>). The fraud only became clear about a week later when corporate headquarters was contacted.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                    <p>Every face in that meeting, except the victim, was synthetic. The attackers had spent months collecting publicly available footage of Arup executives from interviews, conference recordings, and internal videos that had leaked. They then drove animated avatars and cloned voices in real time. Arup's Chief Information Officer <strong>Rob Greig</strong> later described it not as a hack but as <em>"technology-enhanced social engineering."</em><sup class="fn"><a href="references.html#ref-3">3</a></sup>
+
+                    <div class="anatomy-title">Anatomy of the Deception</div>
+                    <table class="attack-table">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Execution</th>
+                                <th>Psychological Trigger</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Initial Contact</strong></td>
+                                <td>Phishing email purporting to be from the CFO requesting confidential wires.</td>
+                                <td>Authority bias and manufactured urgency.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>The Trust Loop</strong></td>
+                                <td>Employee invited into a live video call with multiple familiar executive faces.</td>
+                                <td>Visual and auditory confirmation override the initial doubt.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deepfake Deployment</strong></td>
+                                <td>Real-time facial synthesis and cloned voices for the CFO and several colleagues.</td>
+                                <td>Perceived consensus among trusted peers.<sup class="fn"><a href="references.html#ref-3">3</a></sup></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Execution</strong></td>
+                                <td>15 wire transfers to 5 bank accounts, ~$25.6M USD.</td>
+                                <td>Compliance with what looks like normal hierarchy.<sup class="fn"><a href="references.html#ref-3">3</a></sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- VIRTUAL KIDNAPPING -->
+            <div class="case-study destefano">
+                <div class="case-study-header">
+                    <div class="case-icon"><img src="UI/shape6.png" alt="" aria-hidden="true"></div>
+                    <div class="case-title">
+                        <span class="case-tag">Example 2 — Virtual Kidnapping</span>
+                        <h3>Weaponizing the Limbic System</h3>
+                        <p class="case-sub">Jennifer DeStefano · Arizona · 2023</p>
+                    </div>
+                    <div class="case-loss">
+                        <div class="loss-num">$1M</div>
+                        <div class="loss-lbl">Ransom demand</div>
+                    </div>
+                </div>
+                <div class="case-body">
+                    <p>While corporate attacks chase money inside a finance department, consumer attacks are designed to be intimate. They aim to bypass logic by triggering the fight-or-flight response.<sup class="fn"><a href="references.html#ref-23">23</a></sup><sup class="fn"><a href="references.html#ref-24">24</a></sup></p>
+                    <p>The traditional "grandparent scam," where a caller pretends to be a relative in trouble, has been upgraded with voice cloning. Today, scammers scrape brief audio of a target from TikTok, Instagram, or Facebook, and clone the voice with a model that needs only a few seconds of input.<sup class="fn"><a href="references.html#ref-4">4</a></sup><sup class="fn"><a href="references.html#ref-24">24</a></sup></p>
+                    <p>In April 2023, <strong>Jennifer DeStefano</strong>, a mother in Arizona, picked up the phone while running errands. The voice on the other end was her 15-year-old daughter Briana, sobbing and saying, <em>"Mom, I messed up."</em> A man's voice cut in, demanded a <strong>$1 million ransom</strong>, and warned her not to call the police.<sup class="fn"><a href="references.html#ref-24">24</a></sup><sup class="fn"><a href="references.html#ref-25">25</a></sup></p>
+                    <p>The voice was not a generic recording. It had Briana's pitch, her cry, and her speech rhythm. Panic took over almost immediately. DeStefano was lucky. Other people in the room helped her reach her husband, who confirmed Briana was safe on a school ski trip. The illusion broke. Many other families have not had that luck.<sup class="fn"><a href="references.html#ref-24">24</a></sup></p>
+                    <p>These scams work because they hit two channels at once. They <strong>spoof the caller ID</strong> so the call appears to come from a known number, and they use a cloned voice to trigger genuine fear. Under that level of fear, careful reasoning collapses. By the time the victim's logic comes back, the money has often moved through wire transfer or cryptocurrency, and it is hard to recover.<sup class="fn"><a href="references.html#ref-23">23</a></sup><sup class="fn"><a href="references.html#ref-24">24</a></sup>
+
+                    <div class="anatomy-title">Anatomy of the Deception</div>
+                    <table class="attack-table">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Execution</th>
+                                <th>Psychological Trigger</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Harvest</strong></td>
+                                <td>Scrape a few seconds of the target's voice from TikTok, Instagram, or Facebook.<sup class="fn"><a href="references.html#ref-4">4</a></sup></td>
+                                <td>Public openness about daily life.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clone</strong></td>
+                                <td>Generate distressed audio in the target's pitch and inflection.<sup class="fn"><a href="references.html#ref-4">4</a></sup></td>
+                                <td>Parental protective instinct.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Spoof</strong></td>
+                                <td>Mask the incoming caller ID so the call looks legitimate.<sup class="fn"><a href="references.html#ref-24">24</a></sup></td>
+                                <td>Visual confirmation of a "known" number.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Execute</strong></td>
+                                <td>Demand immediate crypto or wire payment, forbid contact with police.</td>
+                                <td>Fear-driven response, logic collapses.<sup class="fn"><a href="references.html#ref-23">23</a></sup></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FRAUD TYPOLOGY -->
+            <div class="genesis-intro" style="margin-top: 80px;">
+                <div class="eyebrow">At a Glance — Fraud Typology</div>
+                <h2>Three common attack patterns, three different psychological triggers.</h2>
+            </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Fraud Typology</th>
+                        <th>Primary Target</th>
+                        <th>AI Mechanism Used</th>
+                        <th>Psychological Trigger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Executive Impersonation (Corporate)</strong></td>
+                        <td>Finance employees, corporate leadership.<sup class="fn"><a href="references.html#ref-3">3</a></sup></td>
+                        <td>Real-time video deepfakes plus cloned voice.<sup class="fn"><a href="references.html#ref-3">3</a></sup></td>
+                        <td>Deference to authority, urgency, visual confirmation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Virtual Kidnapping (Consumer)</strong></td>
+                        <td>Parents and family members.<sup class="fn"><a href="references.html#ref-24">24</a></sup></td>
+                        <td>Voice cloning trained on social-media audio.<sup class="fn"><a href="references.html#ref-4">4</a></sup></td>
+                        <td>Fear, protective instinct, fight-or-flight.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>The Grandparent Scam (Consumer)</strong></td>
+                        <td>Older adults.<sup class="fn"><a href="references.html#ref-26">26</a></sup><sup class="fn"><a href="references.html#ref-24">24</a></sup></td>
+                        <td>Voice cloning that simulates distress, accidents, or arrests.</td>
+                        <td>Empathy, family duty, confusion.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-line"></div>
+                <p>© 2026, The Architecture of Illusion</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Chapters</h4>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Further</h4>
+                    <ul>
+                        <li><a href="myths.html">Myths Debunked</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">g</a>
+                <a href="#" class="social-icon">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shattering Illusions — The Architecture of Illusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ARCHITECTURE OF ILLUSION</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="threats.html" class="nav-link">Threats</a></li>
+                <li><a href="myths.html" class="nav-link active">Myths</a></li>
+                <li><a href="prevention.html" class="nav-link">Prevention</a></li>
+                <li><a href="references.html" class="nav-link">Refs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Myths Page -->
+    <section class="page-section" id="page-4">
+        <div class="hero-section">
+            <div class="hero-image">
+                <video class="hero-video" src="Video/myth.mp4" autoplay muted loop playsinline preload="auto"></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Shattering Illusions</h1>
+                <div class="hero-button">
+                    <span>Debunking Misconceptions About Deepfakes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="myths-section">
+            <div class="eyebrow">Shattering the Illusions</div>
+            <div class="myths-intro">
+                <h2>To stay safe, we have to replace some old assumptions with current evidence.</h2>
+                <p>The fast spread of synthetic media has produced a lot of public anxiety, and a lot of false confidence. Both come from the same source: people are guessing about a technology that has changed quickly.<sup class="fn"><a href="references.html#ref-27">27</a></sup> The three myths below are stubborn because they sound right. The evidence says otherwise.</p>
+            </div>
+
+            <div class="accordion">
+                <!-- MYTH 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="myth-num">01</div>
+                        <div class="myth-label">
+                            <span class="myth-tag">Myth</span>
+                            <h3>"I can spot a deepfake with my naked eye."</h3>
+                        </div>
+                        <div class="accordion-toggle">+</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <span class="truth-tag">The Reality</span>
+                            <p>The most common belief is that a careful viewer can catch a deepfake by looking for blurry edges, missing shadows, robotic speech, or unnatural blinking. That used to be true around 2018. It is no longer reliable.<sup class="fn"><a href="references.html#ref-5">5</a></sup></p>
+                            <p>Generative models have closed most of the obvious tells. Newer GANs and autoencoders fix the blinking, smooth the skin, and match the lighting.<sup class="fn"><a href="references.html#ref-14">14</a></sup> Detection benchmarks such as <strong>FaceForensics++</strong>, presented at ICCV 2019, show that even trained models have to keep being retrained as new manipulation methods appear.<sup class="fn"><a href="references.html#ref-28">28</a></sup> In peer-reviewed studies, ordinary participants perform near chance when asked to tell real video from deepfake video, and they tend to be very confident in their wrong answers. Köbis and colleagues called this effect <em>"fooled twice"</em> because people are wrong about the video and also wrong about their own ability to judge it.<sup class="fn"><a href="references.html#ref-5">5</a></sup></p>
+                            <p>Even more sobering: Nightingale and Farid showed in <em>PNAS</em> that AI-synthesized faces are not just hard to tell apart from real ones — they are actually rated as <strong>more trustworthy</strong> than real ones.<sup class="fn"><a href="references.html#ref-1">1</a></sup> Groh and colleagues, also in <em>PNAS</em>, found that human and machine judgments tend to make different mistakes, so combining both helps, but humans alone are not a reliable filter.<sup class="fn"><a href="references.html#ref-29">29</a></sup></p>
+                            <p>The honest summary: in the race between creating fakes and detecting them, the people creating them have the advantage right now. Trust your process, not your eyes.</p>
+                            <div class="evidence">
+                                In peer-reviewed studies, human observers perform <strong>no better than random chance</strong> at spotting modern deepfakes — and worse, they tend to be <em>confident</em> they got it right.<sup class="fn"><a href="references.html#ref-5">5</a></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MYTH 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="myth-num">02</div>
+                        <div class="myth-label">
+                            <span class="myth-tag">Myth</span>
+                            <h3>"Deepfakes only target celebrities and politicians."</h3>
+                        </div>
+                        <div class="accordion-toggle">+</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <span class="truth-tag">The Reality</span>
+                            <p>The first famous deepfakes featured public figures, so many people assume only public figures get targeted. The math says otherwise.</p>
+                            <p>The cost of computation has dropped, and consumer-friendly cloud tools mean an attacker no longer needs a research lab.<sup class="fn"><a href="references.html#ref-14">14</a></sup> A large share of deepfakes circulating online are <strong>non-consensual intimate images</strong>, and they overwhelmingly target private women, students, and minors, not famous people.<sup class="fn"><a href="references.html#ref-2">2</a></sup><sup class="fn"><a href="references.html#ref-16">16</a></sup></p>
+                            <p>Voice cloning attacks follow a similar pattern. Older adults and ordinary parents are the most common targets, because the attackers can pull a few seconds of audio from a Facebook clip and turn it into a fake distress call.<sup class="fn"><a href="references.html#ref-26">26</a></sup><sup class="fn"><a href="references.html#ref-24">24</a></sup></p>
+                            <div class="evidence">
+                                Deepfakes are not only an elite problem. They are a <strong>local, everyday problem</strong>.<sup class="fn"><a href="references.html#ref-2">2</a></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MYTH 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-head">
+                        <div class="myth-num">03</div>
+                        <div class="myth-label">
+                            <span class="myth-tag">Myth</span>
+                            <h3>"There are no legal consequences for creating deepfakes."</h3>
+                        </div>
+                        <div class="accordion-toggle">+</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-body-inner">
+                            <span class="truth-tag">The Reality</span>
+                            <p>The law has been slow, but not absent. Early on, victims often had to rely on defamation, copyright, or general harassment statutes that were written long before generative AI and that did not fit well.<sup class="fn"><a href="references.html#ref-2">2</a></sup> That gap is closing.</p>
+                            <p>In 2025, the United States passed the <strong>TAKE IT DOWN Act</strong>. The full title is the Tools to Address Known Exploitation by Immobilizing Technological Deepfakes on Websites and Networks Act.<sup class="fn"><a href="references.html#ref-16">16</a></sup> It is the first federal statute aimed directly at non-consensual intimate deepfakes, and it shifts some responsibility onto the platforms that host the content.</p>
+
+                            <h4 style="margin-top: 28px;">The TAKE IT DOWN Act of 2025</h4>
+                            <p>For years, the legal route for victims was complicated. Because the images were "fake," many state revenge-porn statutes did not clearly apply, and platforms often hid behind broad immunity.<sup class="fn"><a href="references.html#ref-2">2</a></sup> The 2025 federal law moves on this in four ways.<sup class="fn"><a href="references.html#ref-16">16</a></sup></p>
+
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Provision</th>
+                                        <th>Impact &amp; Consequence</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Federal Criminalization</strong></td>
+                                        <td>Criminalizes the publication of, or threat to publish, AI-generated intimate forgeries without consent.<sup class="fn"><a href="references.html#ref-16">16</a></sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Criminal Penalties</strong></td>
+                                        <td>Convicted individuals face fines and up to <strong>three years in federal prison</strong>.<sup class="fn"><a href="references.html#ref-16">16</a></sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>48-Hour Takedown Mandate</strong></td>
+                                        <td>Covered platforms must remove reported non-consensual intimate deepfakes within <strong>48 hours</strong> of a victim notice, with FTC enforcement.<sup class="fn"><a href="references.html#ref-16">16</a></sup></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Enhanced Protection for Minors</strong></td>
+                                        <td>Lowers the standard for claims involving children, providing faster legal protection.<sup class="fn"><a href="references.html#ref-16">16</a></sup></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin-top: 24px;">The law is not perfect. Scholars have already pointed out questions about scope and enforcement, and most other countries are still catching up.<sup class="fn"><a href="references.html#ref-2">2</a></sup><sup class="fn"><a href="references.html#ref-27">27</a></sup> But the older claim that "nothing can be done legally" no longer holds in the United States.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-line"></div>
+                <p>© 2026, The Architecture of Illusion</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Chapters</h4>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Further</h4>
+                    <ul>
+                        <li><a href="myths.html">Myths Debunked</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">g</a>
+                <a href="#" class="social-icon">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

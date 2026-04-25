@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevention — The Architecture of Illusion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ARCHITECTURE OF ILLUSION</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="threats.html" class="nav-link">Threats</a></li>
+                <li><a href="myths.html" class="nav-link">Myths</a></li>
+                <li><a href="prevention.html" class="nav-link active">Prevention</a></li>
+                <li><a href="references.html" class="nav-link">Refs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Prevention Page -->
+    <section class="page-section" id="page-5">
+        <div class="hero-section">
+            <div class="hero-image">
+                <video class="hero-video" src="Video/Armor.mp4" autoplay muted loop playsinline preload="auto"></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Prevention</h1>
+                <div class="hero-button">
+                    <span>The Human Firewall — Prevention, Awareness &amp; Resources</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="armor-section">
+            <div class="eyebrow">The Human Firewall</div>
+            <div class="armor-intro">
+                <h2>Synthetic media exploits human trust. The first line of defense is human behavior.</h2>
+                <p>Detection tools and laws matter, but they work over time, and the attack hits in seconds. The Federal Trade Commission and the National Cybersecurity Alliance both stress that ordinary people and small finance teams need a habit shift, from <em>"trust but verify"</em> to <strong>"verify, then trust."</strong><sup class="fn"><a href="references.html#ref-26">26</a></sup><sup class="fn"><a href="references.html#ref-30">30</a></sup> The four steps below are concrete and have been recommended in both consumer guidance and academic threat assessments.<sup class="fn"><a href="references.html#ref-22">22</a></sup></p>
+                <p style="margin-top: 16px; font-size: 14px; color: var(--text-muted);"><em>Check each step as you put it in place. Your defense level builds as you commit to each layer.</em></p>
+            </div>
+
+            <div class="armor-progress">
+                <span class="armor-progress-label">Defense Level</span>
+                <div class="armor-progress-bar">
+                    <div class="armor-progress-fill"></div>
+                </div>
+                <span class="armor-progress-num">0%</span>
+            </div>
+
+            <!-- ============================================================
+                 PREVENTION STEPPER — 4 steps live in a single panel.
+                 Users advance with the Prev / Next buttons below.
+                 ============================================================ -->
+            <div class="prev-stepper" id="preventionStepper">
+              <div class="prev-stepper-track">
+
+            <!-- STEP 1 -->
+            <div class="armor-cat prev-step active" data-step="1">
+                <div class="armor-cat-head">
+                    <div class="cat-icon"><img src="UI/shape1.png" alt="" aria-hidden="true"></div>
+                    <h3>Step 1 — Establish the Safe Word Protocol</h3>
+                </div>
+                <p class="armor-cat-lede">The single most useful defense against AI voice cloning is also the lowest tech. It is a family safe word.<sup class="fn"><a href="references.html#ref-30">30</a></sup></p>
+                <ul class="armor-list">
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Agree on a unique, pre-shared phrase</h4>
+                            <p>Families, close friends, and corporate finance teams should pick a phrase that is easy to remember but <strong>hard for an attacker to guess</strong> from public information.<sup class="fn"><a href="references.html#ref-30">30</a></sup> Avoid pet names, addresses, school mascots, or anything you have ever posted online.</p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Share it offline, never on social media</h4>
+                            <p>The safe word should only be shared <strong>in person or through end-to-end encrypted messaging</strong>.<sup class="fn"><a href="references.html#ref-30">30</a></sup> Never put it in email, SMS, or any public-facing platform that can be scraped.</p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Demand the phrase during any emotional request</h4>
+                            <p>A panicked call from a "child" asking for bail money, or a sudden wire request from a "CEO" on video, should always trigger one trained response: <strong>ask for the safe word</strong>. The model does not know your private memory, so it cannot supply it.<sup class="fn"><a href="references.html#ref-30">30</a></sup></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="armor-cat prev-step" data-step="2">
+                <div class="armor-cat-head">
+                    <div class="cat-icon"><img src="UI/shape3.png" alt="" aria-hidden="true"></div>
+                    <h3>Step 2 — Implement Out-of-Band Verification</h3>
+                </div>
+                <p class="armor-cat-lede">Attackers rely on holding the conversation. Break the channel, and you break the scam.<sup class="fn"><a href="references.html#ref-26">26</a></sup></p>
+                <ul class="armor-list">
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>If the caller dodges the safe word, hang up</h4>
+                            <p>If they get angry, push harder, or try to talk around the request, end the call. You do not owe them an explanation.<sup class="fn"><a href="references.html#ref-30">30</a></sup></p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Call back on a known, trusted number</h4>
+                            <p>Use a number from your own contacts — <strong>never the caller ID of the incoming call</strong>. Caller ID spoofing is trivial, and attackers will often spoof a real number from your contacts.<sup class="fn"><a href="references.html#ref-24">24</a></sup></p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Switch the medium</h4>
+                            <p>If the first contact was a phone call, move to a known video platform such as <strong>FaceTime</strong> or to an end-to-end encrypted messenger. Forcing the attacker onto unfamiliar ground often ends the attack on its own.<sup class="fn"><a href="references.html#ref-26">26</a></sup></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="armor-cat prev-step" data-step="3">
+                <div class="armor-cat-head">
+                    <div class="cat-icon"><img src="UI/shape5.png" alt="" aria-hidden="true"></div>
+                    <h3>Step 3 — Starve the Algorithm (Data Minimization)</h3>
+                </div>
+                <p class="armor-cat-lede">Generative models need fuel. Most consumer-targeted deepfakes are built from what victims have already posted.<sup class="fn"><a href="references.html#ref-22">22</a></sup></p>
+                <ul class="armor-list">
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Lock down privacy settings</h4>
+                            <p>Keep your profile visible only to people you actually know. Remove followers you do not. Audit older posts that contain long, clean clips of your face or voice.</p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Reduce the volume of public audio and video</h4>
+                            <p>Recent zero-shot models can clone a voice from a few seconds of clean audio.<sup class="fn"><a href="references.html#ref-4">4</a></sup> Every long voice memo, podcast clip, or talking-head TikTok is potential training data for someone targeting your family.</p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Treat your likeness as a liability</h4>
+                            <p>You cannot remove all risk. But you can shrink the attack surface. The less raw material an attacker can collect, the harder their job becomes.<sup class="fn"><a href="references.html#ref-22">22</a></sup></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="armor-cat prev-step" data-step="4">
+                <div class="armor-cat-head">
+                    <div class="cat-icon"><img src="UI/shape6.png" alt="" aria-hidden="true"></div>
+                    <h3>Step 4 — Enforce Zero-Trust &amp; Multi-Factor Authentication</h3>
+                </div>
+                <p class="armor-cat-lede">In any corporate or financial setting, video and audio confirmation should not be enough on its own to move money.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                <ul class="armor-list">
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Mandate hardware-based MFA everywhere</h4>
+                            <p>Pair every password with a <strong>physical security key</strong> (FIDO2, YubiKey) or an authenticator app generating short-lived codes. If the Arup employee in Hong Kong had needed a hardware key alongside the video-call sign-off, the $25 million transfer would not have cleared.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Never authorize transfers on voice or video alone</h4>
+                            <p>Treat any voice or video request as <strong>untrusted by default</strong>. Require a second, structurally independent factor: a hardware token, an in-person approval, or a signed approval inside a vetted workflow.<sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+                        </div>
+                    </li>
+                    <li class="armor-item">
+                        <div class="armor-check"></div>
+                        <div class="armor-body">
+                            <h4>Remember: AI can clone a face. It cannot clone your hardware.</h4>
+                            <p>A model can copy a CFO's voice, face, and mannerisms. It cannot copy a key sitting on your desk. That is why hardware MFA is still the single most cost-effective break point in the chain.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+              </div><!-- /.prev-stepper-track -->
+
+              <!-- Stepper navigation -->
+              <div class="prev-stepper-nav">
+                <button type="button" class="prev-step-btn prev-step-prev" data-direction="prev" aria-label="Previous step" disabled>
+                  <span class="prev-arrow" aria-hidden="true">&#8592;</span>
+                  <span>Previous</span>
+                </button>
+
+                <div class="prev-step-indicator">
+                  <div class="prev-step-counter">
+                    Step <span class="prev-step-current">1</span> of <span class="prev-step-total">4</span>
+                  </div>
+                  <div class="prev-step-dots" role="tablist" aria-label="Prevention step navigation">
+                    <button type="button" class="prev-dot active" data-step="1" role="tab" aria-label="Go to step 1"></button>
+                    <button type="button" class="prev-dot" data-step="2" role="tab" aria-label="Go to step 2"></button>
+                    <button type="button" class="prev-dot" data-step="3" role="tab" aria-label="Go to step 3"></button>
+                    <button type="button" class="prev-dot" data-step="4" role="tab" aria-label="Go to step 4"></button>
+                  </div>
+                </div>
+
+                <button type="button" class="prev-step-btn prev-step-next" data-direction="next" aria-label="Next step">
+                  <span>Next</span>
+                  <span class="prev-arrow" aria-hidden="true">&#8594;</span>
+                </button>
+              </div>
+            </div><!-- /.prev-stepper -->
+
+            <!-- FURTHER READING -->
+            <div class="genesis-intro" style="margin-top: 80px;">
+                <div class="eyebrow">Further Reading &amp; Educational Resources</div>
+                <h2>Keep learning. The arms race does not stop.</h2>
+                <p>To go deeper, the three resources below are good starting points. They were chosen because they are run by an academic lab, a federal agency, and a non-profit with public methodology.</p>
+            </div>
+
+            <div class="resource-list">
+                <a class="resource-link" href="https://news.mit.edu/2020/mit-tackles-misinformation-in-event-of-moon-disaster-0720" target="_blank" rel="noopener noreferrer">
+                    <div class="resource-body">
+                        <span class="resource-domain">moondisaster.org</span>
+                        <h4>MIT Center for Advanced Virtuality — <em>In Event of Moon Disaster</em></h4>
+                        <p>Interactive installation and teaching modules on media literacy and deepfake identification.</p>
+                    </div>
+                    <span class="resource-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="resource-link" href="https://www.ftc.gov/news-events/contests/ftc-voice-cloning-challenge" target="_blank" rel="noopener noreferrer">
+                    <div class="resource-body">
+                        <span class="resource-domain">ftc.gov</span>
+                        <h4>The Federal Trade Commission — Voice Cloning Challenge</h4>
+                        <p>Federal initiatives, consumer alerts, and an open challenge for detection technology.</p>
+                    </div>
+                    <span class="resource-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="resource-link" href="https://www.staysafeonline.org/articles/why-your-family-and-coworkers-need-a-safe-word-in-the-age-of-ai" target="_blank" rel="noopener noreferrer">
+                    <div class="resource-body">
+                        <span class="resource-domain">staysafeonline.org</span>
+                        <h4>National Cybersecurity Alliance — Family Safe-Word Guide</h4>
+                        <p>Practical guides for setting up family safe words and reducing your digital footprint.</p>
+                    </div>
+                    <span class="resource-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-line"></div>
+                <p>© 2026, The Architecture of Illusion</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Chapters</h4>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Further</h4>
+                    <ul>
+                        <li><a href="myths.html">Myths Debunked</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">g</a>
+                <a href="#" class="social-icon">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

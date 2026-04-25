@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architecture of Illusion — Deepfakes, Voice Cloning & Synthetic Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ARCHITECTURE OF ILLUSION</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="threats.html" class="nav-link">Threats</a></li>
+                <li><a href="myths.html" class="nav-link">Myths</a></li>
+                <li><a href="prevention.html" class="nav-link">Prevention</a></li>
+                <li><a href="references.html" class="nav-link">Refs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section class="page-section" id="page-home">
+        <div class="hero-section">
+            <div class="hero-image">
+                <video class="hero-video" src="Video/homepage.mp4" autoplay muted loop playsinline preload="auto" poster=""></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">The Architecture<br>of Illusion</h1>
+                <a href="#begin" class="hero-button">
+                    <span>Begin the Journey</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="quick-overview">
+            <div class="overview-card">
+                <h3>Seeing Is No Longer Believing</h3>
+                <p>For most of human history, our default rule was simple: if you saw it or heard it, you could probably trust it. That rule no longer holds. Recent peer-reviewed work shows that AI-generated faces are now rated as more trustworthy than real ones.<sup class="fn"><a href="references.html#ref-1">1</a></sup></p>
+            </div>
+            <div class="overview-card">
+                <h3>A Mirror of Intent, Not a Villain</h3>
+                <p>Deepfakes and voice cloning are not good or evil on their own. They reflect what the person using them wants to do. The same model can give a cancer patient their voice back, or it can be used to steal twenty-five million dollars in a single video call.<sup class="fn"><a href="references.html#ref-2">2</a></sup><sup class="fn"><a href="references.html#ref-3">3</a></sup></p>
+            </div>
+            <div class="overview-card">
+                <h3>3 Seconds of Audio</h3>
+                <p>Modern voice cloning systems can copy a person's voice from about three seconds of clean audio scraped from a social post or voicemail. That is not a future projection. It is the published capability of recent zero-shot models.<sup class="fn"><a href="references.html#ref-4">4</a></sup></p>
+            </div>
+        </div>
+
+        <!-- MANIFESTO -->
+        <section class="manifesto" id="begin">
+            <div class="eyebrow">The New Reality — Understanding Synthetic Media</div>
+            <h2>The human brain is good at faces and voices. We learn the cadence of a parent on the phone or the slight twitch of a friend's mouth, and we use that as a shortcut for trust.</h2>
+            <p>That shortcut is now in trouble. Generative models can copy the acoustic fingerprint of a voice and the small movements of a face well enough that people, on average, cannot tell the difference.<sup class="fn"><a href="references.html#ref-1">1</a></sup><sup class="fn"><a href="references.html#ref-5">5</a></sup></p>
+            <p>This is not only a story about harm. The same systems were used to give Val Kilmer his voice back after throat cancer,<sup class="fn"><a href="references.html#ref-6">6</a></sup> to help people with ALS keep talking to their families in their own voice,<sup class="fn"><a href="references.html#ref-8">8</a></sup> and to let <em>The Mandalorian</em> show a young Luke Skywalker on screen again.<sup class="fn"><a href="references.html#ref-7">7</a></sup> To understand the full picture, we have to look at how the illusion is actually built, what it is doing well, and where it is going wrong.</p>
+            <div class="stat-row">
+                <div class="stat-box">
+                    <span class="num">~900%</span>
+                    <span class="lbl">Estimated annual growth in synthetic media files between 2023 and 2025, based on industry threat analysis<sup class="fn"><a href="references.html#ref-9">9</a></sup></span>
+                </div>
+                <div class="stat-box">
+                    <span class="num">8M</span>
+                    <span class="lbl">Estimated number of deepfakes in circulation by 2025, up from roughly 500K in 2023<sup class="fn"><a href="references.html#ref-9">9</a></sup></span>
+                </div>
+                <div class="stat-box">
+                    <span class="num">$25.6M</span>
+                    <span class="lbl">Stolen in the Arup deepfake video-conference heist in Hong Kong, January 2024<sup class="fn"><a href="references.html#ref-3">3</a></sup></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE OF CONTENTS -->
+        <section class="toc-journey">
+            <div class="eyebrow">The Journey Ahead</div>
+            <h2>Six chapters. One report. Pick where to start.</h2>
+
+            <div class="journey-buttons">
+                <a href="history.html" class="journey-btn">
+                    <span class="jb-num">01</span>
+                    <span class="jb-name">History</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="how-it-works.html" class="journey-btn">
+                    <span class="jb-num">02</span>
+                    <span class="jb-name">How It Works</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="benefits.html" class="journey-btn">
+                    <span class="jb-num">03</span>
+                    <span class="jb-name">Benefits</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="threats.html" class="journey-btn">
+                    <span class="jb-num">04</span>
+                    <span class="jb-name">Threats</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="myths.html" class="journey-btn">
+                    <span class="jb-num">05</span>
+                    <span class="jb-name">Myths</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="prevention.html" class="journey-btn">
+                    <span class="jb-num">06</span>
+                    <span class="jb-name">Defense</span>
+                    <svg class="jb-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-line"></div>
+                <p>© 2026, The Architecture of Illusion</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Chapters</h4>
+                    <ul>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="benefits.html">Benefits</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Further</h4>
+                    <ul>
+                        <li><a href="myths.html">Myths Debunked</a></li>
+                        <li><a href="prevention.html">Prevention</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">t</a>
+                <a href="#" class="social-icon">g</a>
+                <a href="#" class="social-icon">i</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
